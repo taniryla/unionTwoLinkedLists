@@ -40,6 +40,7 @@
 
 // 11. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 
+// if the two linked lists don't intersect at all
 // make sure linked list values are 0 to 9 integers
 
 // 12. Progress to more complex examples. What is your updated plan here to find a solution?
@@ -76,7 +77,8 @@ function unionLinkedList(linkedListOne, linkedListTwo) {
   // from the head, iterate through both linked list and find matches and add to new union array
   if (linkedListTwo > 0 && linkedListTwo <= 9) {
     while (currentTwo !== null) {
-      currentOne = currentOne.next;
+      console.log(currentTwo);
+      currentTwo = currentTwo.next;
     }
   }
   if (currentOne.value === currentTwo.value) {
