@@ -61,6 +61,10 @@
 // 21.   How have other people solved this problem?
 
 function unionLinkedList(headOne, headTwo) {
+  // if headOne is null or headTwo is null, return null
+  if (headOne === null || headTwo === null) {
+    return null;
+  }
   // create new union array and set to empty
   // set currentOne variable to head for linkedListOne
   let union = null;
