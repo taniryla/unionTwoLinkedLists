@@ -62,7 +62,7 @@
 function unionLinkedList(linkedListOne, linkedListTwo) {
   // create new union array and set to empty
   // set currentOne variable to head for linkedListOne
-  let union = [];
+  let union = null;
   let currentOne = head;
   // make sure the linked list is an integer value between 0 and 9
   // from the head, iterate through both linked list and find matches and add to new union array
@@ -80,8 +80,8 @@ function unionLinkedList(linkedListOne, linkedListTwo) {
     }
   }
   if (currentOne.value === currentTwo.value) {
-    union.push(currentOne.value);
+    union.add(currentOne.value);
   }
-  // nreturn new union array
+  // nreturn new union linked list
   return union;
 }
