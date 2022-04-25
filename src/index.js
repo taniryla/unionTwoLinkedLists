@@ -23,7 +23,7 @@
 
 // 6. How should I label important pieces of data input that are a part of the problem?
 
-// linkedListOne, linkedListTwo
+// headOne, headTwo
 
 // 7. Draw a figure. Introduce suitable notation.
 
@@ -60,7 +60,7 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function unionLinkedList(linkedListOne, linkedListTwo) {
+function unionLinkedList(headOne, headTwo) {
   // create new union array and set to empty
   // set currentOne variable to head for linkedListOne
   let union = null;
