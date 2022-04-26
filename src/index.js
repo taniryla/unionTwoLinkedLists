@@ -74,6 +74,10 @@ function unionLinkedList(headOne, headTwo) {
   while (pointer1 !== pointer2) {
     pointer1 = pointer1.next;
     pointer2 = pointer2.next;
+
+    if (pointer1 === pointer2) {
+      return pointer1;
+    }
     if (pointer1 === null) {
       pointer1 = headTwo;
     }
@@ -82,5 +86,4 @@ function unionLinkedList(headOne, headTwo) {
     }
   }
   // return pointer1 linked list
-  return pointer1;
 }
