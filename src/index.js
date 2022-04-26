@@ -71,23 +71,16 @@ function unionLinkedList(headOne, headTwo) {
   let pointer2 = headTwo;
   // make sure the linked list is an integer value between 0 and 9
   // from the head, iterate through both linked list and find matches and add to new union array
-  if (linkedListOne > 0 && linkedListOne <= 9) {
-    while (currentOne !== null) {
-      currentOne = currentOne.next;
+  while (pointer1 !== pointer2) {
+    pointer1 = pointer1.next;
+    pointer2 = pointer2.next;
+    if (pointer1 === null) {
+      pointer1 = headTwo;
+    }
+    if (pointer2 === null) {
+      pointer2 = headOne;
     }
   }
-  let currentTwo = head;
-  // make sure the linked list is an integer value between 0 and 9
-  // from the head, iterate through both linked list and find matches and add to new union array
-  if (linkedListTwo > 0 && linkedListTwo <= 9) {
-    while (currentTwo !== null) {
-      console.log(currentTwo);
-      currentTwo = currentTwo.next;
-    }
-  }
-  if (currentOne.value === currentTwo.value) {
-    union.add(currentOne.value);
-  }
-  // nreturn new union linked list
-  return union;
+  // return pointer1 linked list
+  return pointer1;
 }
