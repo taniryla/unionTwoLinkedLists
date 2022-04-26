@@ -66,7 +66,7 @@ function unionLinkedList(headOne, headTwo) {
     return null;
   }
   // create new union array and set to empty
-  // set currentOne variable to head for linkedListOne
+  // set pointer1 to headOne and pointer2 to headTwo
   let pointer1 = headOne;
   let pointer2 = headTwo;
   // make sure the linked list is an integer value between 0 and 9
