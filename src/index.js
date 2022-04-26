@@ -67,8 +67,8 @@ function unionLinkedList(headOne, headTwo) {
   }
   // create new union array and set to empty
   // set currentOne variable to head for linkedListOne
-  let union = null;
-  let currentOne = head;
+  let pointer1 = headOne;
+  let pointer2 = headTwo;
   // make sure the linked list is an integer value between 0 and 9
   // from the head, iterate through both linked list and find matches and add to new union array
   if (linkedListOne > 0 && linkedListOne <= 9) {
